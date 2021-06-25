@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+class totalseconds
+{
+	private:
+		int h,m,s;
+		int hINs, mINs;
+		int total;
+	public:
+		hours()
+		{
+			cout<<"Enter hours "; cin>>h;
+			hINs = h*3600;
+		}
+		mins()
+		{
+			cout<<"Enter mins ";cin>>m;
+			mINs = m*60;
+		}
+		sec()
+		{
+			cout<<"Enter seconds "; cin>>s;
+			
+		}
+		display()
+		{
+			cout<<"Time is "<<h<<":"<<m<<":"<<s<<endl;
+		}
+		totalSec()
+		{
+		total = hINs+mINs+s;
+		cout<<"Total seconds is "<<total;	
+		}
+};
+
+int main()
+{
+	totalseconds t1;
+	t1.hours();
+	t1.mins();
+	t1.sec();
+	t1.display();
+	t1.totalSec();
+	
+	return 0;
+}
